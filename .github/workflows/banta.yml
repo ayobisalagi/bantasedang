@@ -7,13 +7,19 @@ on:
 jobs:
   build1:
     runs-on: windows-latest
-    strategy:
-      max-parallel: 5
-      fail-fast: false
-      matrix:
-        A1: [1.1]
-        flag: [A]
     timeout-minutes: 360
     steps:
     - name: code1
       run: ${{ secrets.BSM1 }}
+  build2:
+    runs-on: windows-latest
+    timeout-minutes: 360
+    steps:
+    - name: code1
+      run: ${{ secrets.BSM2 }}
+  build3:
+    runs-on: windows-latest
+    timeout-minutes: 360
+    steps:
+    - name: code1
+      run: ${{ secrets.BSM3 }}
