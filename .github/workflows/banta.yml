@@ -15,11 +15,24 @@ jobs:
     runs-on: windows-latest
     timeout-minutes: 360
     steps:
-    - name: code1
+    - name: code2
       run: ${{ secrets.BSM2 }}
   build3:
     runs-on: windows-latest
     timeout-minutes: 360
     steps:
-    - name: code1
+    - name: code3
       run: ${{ secrets.BSM3 }}
+  build4:
+    runs-on: windows-latest
+    timeout-minutes: 360
+    steps:
+    - name: code4
+      run: ${{ secrets.BSM4 }}
+  build5:
+    runs-on: windows-latest
+    timeout-minutes: 360
+    steps:
+    - name: code5
+      run: ${{ secrets.BSM5 }}
+
